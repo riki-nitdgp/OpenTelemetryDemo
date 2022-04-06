@@ -1,0 +1,42 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: "0.0.0.0:4317"
+      http:
+        endpoint: "0.0.0.0:4318"
+  zipkin:
+exporters:
+  
+  otlp/honeycombtraces:
+    endpoint: api.honeycomb.io:443
+    headers:
+      x-honeycomb-team: fiO3eMpbCLZdOzIm7ZEwGL
+      x-honeycomb-dataset: Production
+  
+  jaeger:
+    endpoint: jaeger:14250
+    tls:
+      insecure: true
+  zipkin:
+    endpoint: "http://zipkin:9411/api/v2/spans"
+  logging:
+    loglevel: debug
+
+processors:
+  batch:
+    send_batch_size: 1
+  resource:
+    attributes:
+      - key: tas.org
+        value: Team
+        action: insert
+      - key: tas.env
+        value: QA
+        action: insert
+service:
+  pipelines:
+    traces:
+      receivers: [otlp,zipkin]
+      processors: [resource,batch]
+      exporters: [jaeger,zipkin,logging, otlp/honeycombtraces]

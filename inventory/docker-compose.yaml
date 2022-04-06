@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  app:
+    image: inventory-service:latest
+    build:
+      context: .
+    container_name: inventory-service-container
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:h2:mem:inventory_service_db
+      - SPRING_DATASOURCE_USERNAME=inventory_service_user
+      - SPRING_DATASOURCE_PASSWORD=inventory_service_pass
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - OTEL_RESOURCE_ATTRIBUTES=service.name=inventory-service
+      - OTEL_PROPAGATORS=b3
+    ports:
+      - 8009:8009
+
+
+

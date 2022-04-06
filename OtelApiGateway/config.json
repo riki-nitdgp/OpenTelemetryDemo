@@ -1,0 +1,21 @@
+
+
+{
+  "SERVICE_NAME": "api-gateway",
+  "PORT": 8006,
+  "ENABLE_OPEN_TELEMETRY": true,
+  "HOST": "0.0.0.0",
+  "DEBUG": false,
+  "API_PREFIX": "/api",
+
+  "USER_SERVICE": {
+    "HOST": "http://user-service:8005"
+  },
+  "RATING_REVIEW_SERVICE": {
+    "HOST": "http://rating-review-service:8002"
+  },
+
+  "INVENTORY_SERVICE" : {
+    "HOST": "http://inventory-service:8009"
+  }
+}
