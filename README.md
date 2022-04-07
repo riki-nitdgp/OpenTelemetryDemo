@@ -5,7 +5,7 @@
 ### Service Details 
 - **OtelApiGateway:** : It is written in  Python(FastAPI). It acts as a reverse proxy to accept all application programming interface (API) calls, aggregate the various services required to fulfill them, and return the appropriate result. (Port: 8006)
 
-- **user-service: ** It is written in Python(FastAPI). Used for storing user data, authorization and authentication. (Port: 8005)
+- **user-service:** It is written in Python(FastAPI). Used for storing user data, authorization and authentication. (Port: 8005)
 - **inventory-service:** It is written in Java(Spring Boots), Used for storing all products and its availability  status. (Port: 8009)
 - **rating-review-service:**  It is written in Java(Spring Boots). Used for storing review and rating for different products. (Port: 8002)
 
