@@ -28,3 +28,10 @@
 
 ### OpenTelemetry Trace Flow
 ![OtelTraceFlow](https://github.com/riki-nitdgp/OpenTelemetryDemo/blob/main/OtelArchitecture.jpg?raw=true)
+
+### Find Your Traces
+- Open Jaeger `http://localhost:16686`
+
+### Service Map
+
+![ServiceMap](https://github.com/riki-nitdgp/OpenTelemetryDemo/blob/main/Screenshot%202022-04-07%20at%205.24.35%20PM.png?raw=true)
