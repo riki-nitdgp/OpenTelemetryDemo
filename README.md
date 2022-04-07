@@ -1,6 +1,6 @@
 # OpenTelemetry Demo
 ## Product Feedback Service
-![Banner](https://github.com/riki-nitdgp/OpenTelemetryDemo/blob/main/banner.png?raw=true)
+![Banner](https://github.com/riki-nitdgp/OpenTelemetryDemo/img/blob/main/banner.png?raw=true)
 
 ### Service Details 
 - **OtelApiGateway:** : It is written in  Python(FastAPI). It acts as a reverse proxy to accept all application programming interface (API) calls, aggregate the various services required to fulfill them, and return the appropriate result. (Port: 8006)
@@ -10,7 +10,7 @@
 - **rating-review-service:**  It is written in Java(Spring Boots). Used for storing review and rating for different products. (Port: 8002)
 
 ### Service Architecture 
-![ServiceArchitecture](https://github.com/riki-nitdgp/OpenTelemetryDemo/blob/main/MicroServivce.jpg?raw=true)
+![ServiceArchitecture](https://github.com/riki-nitdgp/OpenTelemetryDemo/img/blob/main/MicroServivce.jpg?raw=true)
 
 
 ### Deployment Steps 
@@ -27,11 +27,24 @@
 - Now You can play with the service using api, find the postman collection [here](https://www.getpostman.com/collections/ac35fe0a9bb14a4bc572 "here")
 
 ### OpenTelemetry Trace Flow
-![OtelTraceFlow](https://github.com/riki-nitdgp/OpenTelemetryDemo/blob/main/OtelArchitecture.jpg?raw=true)
+![OtelTraceFlow](https://github.com/riki-nitdgp/OpenTelemetryDemo/img/blob/main/OtelArchitecture.jpg?raw=true)
 
 ### Find Your Traces
 - Open Jaeger `http://localhost:16686`
 
+## Jaeger Home
+
+![Home](https://github.com/riki-nitdgp/OpenTelemetryDemo/img/blob/main/home-2.png?raw=true)
+
+
 ### Service Map
 
-![ServiceMap](https://github.com/riki-nitdgp/OpenTelemetryDemo/blob/main/Screenshot%202022-04-07%20at%205.24.35%20PM.png?raw=true)
+![ServiceMap](https://github.com/riki-nitdgp/OpenTelemetryDemo/img/blob/main/service-map.png?raw=true)
+
+
+### Distributed Traces
+
+![distibuted-trace](https://github.com/riki-nitdgp/OpenTelemetryDemo/img/blob/main/distibuted-trace.png?raw=true)
+
+
+
