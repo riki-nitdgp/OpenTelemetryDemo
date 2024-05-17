@@ -1,4 +1,6 @@
 # OpenTelemetry Demo
+# Medium Article
+https://medium.com/@rickymondal/distributed-tracing-with-opentelemetry-91b76b22abf9
 ## Product Feedback Service
 ![Banner](https://github.com/riki-nitdgp/OpenTelemetryDemo/blob/main/img/banner.png?raw=true)
 
